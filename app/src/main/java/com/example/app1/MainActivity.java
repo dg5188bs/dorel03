@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
+    int t=0;
 
 
     @Override
@@ -18,7 +19,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
-        btn.setText("Oh, yea, I’ve been clicked!");
+        btn.setText("This is a click number" + t );
+        if (t==6) {
+            btn.setText("Enough to click. Go to new start!");
+            t=0;
+        }
+        t++;
 
     }
 }
