@@ -20,9 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void go(View view) {
         btn.setText("This is a click number" + t );
-        if (t==6) {
-            btn.setText("Enough to click. Go to new start!");
-            t=0;
+        if (t%7==0 & t!=0) {
+            btn.setText("boom!");
         }
         t++;
 
