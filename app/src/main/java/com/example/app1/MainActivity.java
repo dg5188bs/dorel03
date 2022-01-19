@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
-        btn.setText("This is a click number" + t );
+        btn.setText("This is a click number " + t );
         if (t%7==0 & t!=0) {
             btn.setText("boom!");
         }
